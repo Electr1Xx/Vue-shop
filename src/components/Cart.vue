@@ -64,7 +64,7 @@ export default {
       return this.$store.state.cartTotal
     },
     total: function () {
-      return Object.values(this.$store.state.cart).reduce((first, el) => {console.log(first);return first + (el.quantity * el.item.price) }, 0)
+      return Object.values(this.$store.state.cart).reduce((first, el) => { return first + (el.quantity * el.item.price) }, 0)
     }
   },
   methods: {
